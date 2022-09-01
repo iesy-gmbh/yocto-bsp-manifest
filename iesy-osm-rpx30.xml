@@ -2,7 +2,7 @@
 <manifest>
   <remote fetch="https://github.com/OSSystems" name="browser"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
-  <remote fetch="https://github.com/rockchip-linux" name="rockchip"/>
+  <remote fetch="https://github.com/JeffyCN" name="JeffyCN"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/iesy-gmbh" name="iesy"/>
   <remote fetch="https://git.openembedded.org" name="python2"/>
@@ -13,7 +13,7 @@
   <project name="meta-browser" remote="browser" revision="master" path="sources/meta-browser"/>
   <project name="meta-clang" remote="clang" revision="dunfell" path="sources/meta-clang"/>
   <project name="meta-iesy-osm" remote="iesy" revision="dunfell" path="sources/meta-iesy-osm"/>
-  <project name="meta-rockchip" remote="rockchip" revision="yocto-next" path="sources/meta-rockchip"/>
+  <project name="meta-rockchip" remote="JeffyCN" revision="dunfell" path="sources/meta-rockchip"/>
   <project name="meta-openembedded" remote="oe" revision="dunfell" path="sources/meta-openembedded"/>
   <project name="meta-python2" remote="python2" revision="dunfell" path="sources/meta-python2"/>
   <project name="meta-qt5" remote="qt5" revision="dunfell" path="sources/meta-qt5"/>
