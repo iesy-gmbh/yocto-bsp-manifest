@@ -11,15 +11,15 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   
   <project name="meta-browser" remote="browser" revision="master" path="sources/meta-browser"/>
-  <project name="meta-clang" remote="clang" revision="dunfell" path="sources/meta-clang"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="dunfell" path="sources/meta-iesy-osm"/>
-  <project name="meta-rockchip" remote="JeffyCN" revision="dunfell" path="sources/meta-rockchip"/>
-  <project name="meta-openembedded" remote="oe" revision="dunfell" path="sources/meta-openembedded"/>
-  <project name="meta-python2" remote="python2" revision="dunfell" path="sources/meta-python2"/>
-  <project name="meta-qt5" remote="qt5" revision="dunfell" path="sources/meta-qt5"/>
+  <project name="meta-clang" remote="clang" revision="kirkstone" path="sources/meta-clang"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="kirkstone" path="sources/meta-iesy-osm"/>
+  <project name="meta-rockchip" remote="JeffyCN" revision="kirkstone" path="sources/meta-rockchip"/>
+  <project name="meta-openembedded" remote="oe" revision="kirkstone" path="sources/meta-openembedded"/>
+  <project name="meta-python2" remote="python2" revision="kirkstone" path="sources/meta-python2"/>
+  <project name="meta-qt5" remote="qt5" revision="kirkstone" path="sources/meta-qt5"/>
   <project name="meta-rust" remote="rust" revision="master" path="sources/meta-rust"/>
   
-  <project name="poky" remote="yocto" revision="dunfell" path="sources/poky">
+  <project name="poky" remote="yocto" revision="kirkstone" path="sources/poky">
 	  <linkfile dest="scripts" src="scripts"/>
 	  <linkfile dest="bitbake" src="bitbake"/>
 	  <linkfile dest="meta-poky" src="meta-poky"/>

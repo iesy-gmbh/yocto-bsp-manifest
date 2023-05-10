@@ -5,17 +5,17 @@
   <remote fetch="https://github.com/iesy-gmbh" name="iesy"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   
-  <project name="meta-freescale" remote="yocto" revision="dunfell" path="sources/meta-freescale"/>
-  <project name="meta-freescale-3rdparty" remote="freescale" revision="dunfell" path="sources/meta-freescale-3rdparty"/>
-  <project name="meta-freescale-distro" remote="freescale" revision="dunfell" path="sources/meta-freescale-distro"/>
-  <project name="Documentation" remote="freescale" revision="dunfell" path="sources/Documentation"/>
+  <project name="meta-freescale" remote="yocto" revision="kirkstone" path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty" remote="freescale" revision="kirkstone" path="sources/meta-freescale-3rdparty"/>
+  <project name="meta-freescale-distro" remote="freescale" revision="kirkstone" path="sources/meta-freescale-distro"/>
+  <project name="Documentation" remote="freescale" revision="kirkstone" path="sources/Documentation"/>
   
-  <project name="fsl-community-bsp-base" remote="freescale" revision="dunfell" path="sources/base">
+  <project name="fsl-community-bsp-base" remote="freescale" revision="kirkstone" path="sources/base">
 	<linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
   
-  <project name="meta-iesy-osm" remote="iesy" revision="dunfell" path="sources/meta-iesy-osm"/>
-  <project name="meta-openembedded" remote="oe" revision="dunfell" path="sources/meta-openembedded"/>
-  <project name="poky" remote="yocto" revision="dunfell" path="sources/poky"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="kirkstone" path="sources/meta-iesy-osm"/>
+  <project name="meta-openembedded" remote="oe" revision="kirkstone" path="sources/meta-openembedded"/>
+  <project name="poky" remote="yocto" revision="kirkstone" path="sources/poky"/>
 </manifest>
