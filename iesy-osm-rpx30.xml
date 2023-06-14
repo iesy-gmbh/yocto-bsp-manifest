@@ -10,16 +10,16 @@
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   
-  <project name="meta-browser" remote="browser" revision="master" path="sources/meta-browser"/>
-  <project name="meta-clang" remote="clang" revision="dunfell" path="sources/meta-clang"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="dunfell" path="sources/meta-iesy-osm"/>
-  <project name="meta-rockchip" remote="JeffyCN" revision="dunfell" path="sources/meta-rockchip"/>
-  <project name="meta-openembedded" remote="oe" revision="dunfell" path="sources/meta-openembedded"/>
-  <project name="meta-python2" remote="python2" revision="dunfell" path="sources/meta-python2"/>
-  <project name="meta-qt5" remote="qt5" revision="dunfell" path="sources/meta-qt5"/>
-  <project name="meta-rust" remote="rust" revision="master" path="sources/meta-rust"/>
+  <project name="meta-browser" remote="browser" revision="b279a4dc078ba6957815e2496820f1eadbafd58a" path="sources/meta-browser"/>
+  <project name="meta-clang" remote="clang" revision="67ac939d47b3dfc383fec7244e4a0ff85ca4340f" path="sources/meta-clang"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="17d7b90474e730a3fb1ebf7a7f20a132bd28bce5" path="sources/meta-iesy-osm"/>
+  <project name="meta-rockchip" remote="JeffyCN" revision="bed22d8318e763829d405fb475080428b172e27f" path="sources/meta-rockchip"/>
+  <project name="meta-openembedded" remote="oe" revision="116bfe8d5e5851e7fc5424f40da8691a19c5b5ee" path="sources/meta-openembedded"/>
+  <project name="meta-python2" remote="python2" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" path="sources/meta-python2"/>
+  <project name="meta-qt5" remote="qt5" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" path="sources/meta-qt5"/>
+  <project name="meta-rust" remote="rust" revision="e3082dc0728023b121d648da4c5c856943b5e425" path="sources/meta-rust"/>
   
-  <project name="poky" remote="yocto" revision="dunfell" path="sources/poky">
+  <project name="poky" remote="yocto" revision="733d919af4714845c3a3d64d60c24874881077b3" path="sources/poky">
 	  <linkfile dest="scripts" src="scripts"/>
 	  <linkfile dest="bitbake" src="bitbake"/>
 	  <linkfile dest="meta-poky" src="meta-poky"/>
