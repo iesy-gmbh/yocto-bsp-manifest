@@ -5,7 +5,7 @@
   <remote fetch="https://github.com/iesy-gmbh" name="iesy"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   
-  <project name="meta-freescale" remote="yocto" revision="7e3eeb0f775f63c321c2e492772209e14fa91211" path="sources/meta-freescale"/>
+  <project name="meta-freescale" remote="yocto" revision="96c9651a8db6cb39f5f8c065bbf058afe24186c7" path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty" remote="freescale" revision="2a65ce4cc619c3b9f265f6b1d2dce2b8044501e6" path="sources/meta-freescale-3rdparty"/>
   <project name="meta-freescale-distro" remote="freescale" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" path="sources/meta-freescale-distro"/>
   <project name="Documentation" remote="freescale" revision="7c9ad5c4d9e76e261ddf63fb7bc87fc244f55a38" path="sources/Documentation"/>
@@ -17,5 +17,5 @@
   
   <project name="meta-iesy-osm" remote="iesy" revision="cba8b96b1a615ceeb44635fa7583ea709fda0f13" path="sources/meta-iesy-osm"/>
   <project name="meta-openembedded" remote="oe" revision="a82d92c8a6525da01524bf8f4a60bf6b35dcbb3d" path="sources/meta-openembedded"/>
-  <project name="poky" remote="yocto" revision="7e3eeb0f775f63c321c2e492772209e14fa91211/sources/poky" path="sources/poky"/>
+  <project name="poky" remote="yocto" revision="ab6c16cb554fa352d268c04769258f1c51ffc16d" path="sources/poky"/>
 </manifest>
