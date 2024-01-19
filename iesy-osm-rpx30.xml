@@ -12,7 +12,7 @@
   
   <project name="meta-browser" remote="browser" revision="b279a4dc078ba6957815e2496820f1eadbafd58a" path="sources/meta-browser"/>
   <project name="meta-clang" remote="clang" revision="7e3f2a4126d1bfacda497dfa6b59f3f471f1a984" path="sources/meta-clang"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="f1f843ad27b2985324c648c454447e4a8e22498f" path="sources/meta-iesy-osm"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="60ed0b654288cff482a262711914327140a39762" path="sources/meta-iesy-osm"/>
   <project name="meta-rockchip" remote="JeffyCN" revision="2b86e86eb4ce6a46fbdbfc7c70273c121df0bad9" path="sources/meta-rockchip"/>
   <project name="meta-openembedded" remote="oe" revision="571e36e20e9d1f27af0eb4545291beeb64f280e2" path="sources/meta-openembedded"/>
   <project name="meta-python2" remote="python2" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" path="sources/meta-python2"/>
