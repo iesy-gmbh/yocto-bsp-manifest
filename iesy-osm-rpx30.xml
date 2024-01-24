@@ -10,16 +10,16 @@
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   
-  <project name="meta-browser" remote="browser" revision="b279a4dc078ba6957815e2496820f1eadbafd58a" path="sources/meta-browser"/>
-  <project name="meta-clang" remote="clang" revision="7e3f2a4126d1bfacda497dfa6b59f3f471f1a984" path="sources/meta-clang"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="60ed0b654288cff482a262711914327140a39762" path="sources/meta-iesy-osm"/>
-  <project name="meta-rockchip" remote="JeffyCN" revision="2b86e86eb4ce6a46fbdbfc7c70273c121df0bad9" path="sources/meta-rockchip"/>
-  <project name="meta-openembedded" remote="oe" revision="571e36e20e9d1f27af0eb4545291beeb64f280e2" path="sources/meta-openembedded"/>
+  <project name="meta-browser" remote="browser" revision="5099e669f9415b433fc3851b6c1f8118902b45b6" path="sources/meta-browser"/>
+  <project name="meta-clang" remote="clang" revision="312ff1c39b1bf5d35c0321e873417eb013cea477" path="sources/meta-clang"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="91300a82abcf73c3a012868f5731a232463581f1" path="sources/meta-iesy-osm"/>
+  <project name="meta-rockchip" remote="JeffyCN" revision="96382531773a45934d6c52249fa006bb96e71e27" path="sources/meta-rockchip"/>
+  <project name="meta-openembedded" remote="oe" revision="730e44900a0a86265bad93a16b5a5ff344a07266" path="sources/meta-openembedded"/>
   <project name="meta-python2" remote="python2" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" path="sources/meta-python2"/>
-  <project name="meta-qt5" remote="qt5" revision="44d44933200287f7d17cf6981af4b4a0961c308d" path="sources/meta-qt5"/>
-  <project name="meta-rust" remote="rust" revision="816a860f2b7a40722a87aafc6b74e7a7bc4ad3eb" path="sources/meta-rust"/>
+  <project name="meta-qt5" remote="qt5" revision="fe0bf7f0e5408aac6cc89ff3b19b1b1941df4f64" path="sources/meta-qt5"/>
+  <project name="meta-rust" remote="rust" revision="f6a80656953678f17de7d41343107112d99492d9" path="sources/meta-rust"/>
   
-  <project name="poky" remote="yocto" revision="09def309f91929f47c6cce386016ccb777bd2cfc" path="sources/poky">
+  <project name="poky" remote="yocto" revision="426dfdc8d246cae5f4fd37415ece280f169bee08" path="sources/poky">
 	  <linkfile dest="scripts" src="scripts"/>
 	  <linkfile dest="bitbake" src="bitbake"/>
 	  <linkfile dest="meta-poky" src="meta-poky"/>
