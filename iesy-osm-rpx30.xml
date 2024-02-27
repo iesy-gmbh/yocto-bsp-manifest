@@ -12,14 +12,14 @@
   
   <project name="meta-browser" remote="browser" revision="5099e669f9415b433fc3851b6c1f8118902b45b6" path="sources/meta-browser"/>
   <project name="meta-clang" remote="clang" revision="312ff1c39b1bf5d35c0321e873417eb013cea477" path="sources/meta-clang"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="91300a82abcf73c3a012868f5731a232463581f1" path="sources/meta-iesy-osm"/>
-  <project name="meta-rockchip" remote="JeffyCN" revision="96382531773a45934d6c52249fa006bb96e71e27" path="sources/meta-rockchip"/>
-  <project name="meta-openembedded" remote="oe" revision="730e44900a0a86265bad93a16b5a5ff344a07266" path="sources/meta-openembedded"/>
+  <project name="meta-iesy-osm" remote="iesy" revision="1a1e2304c6798ba06b33d8d04b682fc87c5ca687" path="sources/meta-iesy-osm"/>
+  <project name="meta-rockchip" remote="JeffyCN" revision="941f4102d94c8943bcbd6a12257605316fba7638" path="sources/meta-rockchip"/>
+  <project name="meta-openembedded" remote="oe" revision="8609de00952d65bb813a48c535c937324efeb18a" path="sources/meta-openembedded"/>
   <project name="meta-python2" remote="python2" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" path="sources/meta-python2"/>
   <project name="meta-qt5" remote="qt5" revision="fe0bf7f0e5408aac6cc89ff3b19b1b1941df4f64" path="sources/meta-qt5"/>
-  <project name="meta-rust" remote="rust" revision="f6a80656953678f17de7d41343107112d99492d9" path="sources/meta-rust"/>
+  <project name="meta-rust" remote="rust" revision="9611b42d73c7546c3d845da380943a0a4f4205f0" path="sources/meta-rust"/>
   
-  <project name="poky" remote="yocto" revision="426dfdc8d246cae5f4fd37415ece280f169bee08" path="sources/poky">
+  <project name="poky" remote="yocto" revision="0b39955d14600257a6eafc211fd68a933c69a0e9" path="sources/poky">
 	  <linkfile dest="scripts" src="scripts"/>
 	  <linkfile dest="bitbake" src="bitbake"/>
 	  <linkfile dest="meta-poky" src="meta-poky"/>
