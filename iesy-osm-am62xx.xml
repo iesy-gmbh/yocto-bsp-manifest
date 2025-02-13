@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.openembedded.org" name="oe"/>
-  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="https://github.com/iesy-gmbh" name="iesy"/>
-
-  <project name="bitbake" remote="oe" revision="a4c516ef5e72b2d77ac5ff7e86c5ee2190ebc42f" path="sources/bitbake"/>
-  <project name="meta-arm" remote="yocto" revision="b187fb9232ca0a6b5f8f90b4715958546fc41d73" path="sources/meta-arm"/>
-  <project name="meta-iesy-osm" remote="iesy" revision="4eb026dcdc3ed34d9bb5052aabb986e9f79a2614" path="sources/meta-iesy-osm">
-    <linkfile dest="setup-env" src="conf/setup-env"/>
+  <remote name="iesy" fetch="https://github.com/iesy-gmbh"/>
+  <remote name="oe" fetch="https://git.openembedded.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org"/>
+  
+  <project name="bitbake" path="sources/bitbake" remote="oe" revision="3f88b005244a0afb5d5c7260e54a94a453ec9b3e"/>
+  <project name="meta-arm" path="sources/meta-arm" remote="yocto" revision="936c02ec13661bd86a05f7f90e1b920d5092d670"/>
+  <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="4648f0e88c621344bfadb0b87bccbfdaf2fbdcff">
+    <linkfile src="conf/setup-env" dest="setup-env"/>
   </project>
-  <project name="meta-openembedded" remote="oe" revision="8609de00952d65bb813a48c535c937324efeb18a" path="sources/meta-openembedded"/>
-  <project name="meta-ti" remote="yocto" revision="8899ce3b9ee450ea55ba33786facf08b59100cce" path="sources/meta-ti"/>
-  <project name="openembedded-core" remote="oe" revision="59cc2e75c15f8c6371a4c4a3b7bd2e6c3f145fbc" path="sources/oe-core"/>
-  <project name="poky" remote="yocto" revision="0b39955d14600257a6eafc211fd68a933c69a0e9" path="sources/poky">
-    <linkfile dest="scripts" src="scripts"/>
-	  <linkfile dest="bitbake" src="bitbake"/>
-	  <linkfile dest="meta-poky" src="meta-poky"/>
-	  <linkfile dest=".templateconf" src=".templateconf"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="de8681b4a2a101b99dd2c48d89a7de2ccd9a961f"/>
+  <project name="meta-ti" path="sources/meta-ti" remote="yocto" revision="413bc734d246d0de112654aeabc2d37328818cdc"/>
+  <project name="openembedded-core" path="sources/oe-core" remote="oe" revision="a397c152abf4f3da1323594e79ebac844a2c9f45"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="6840d3b71ed6adfcd2c2e46daf8a93d3755c5d99">
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="bitbake" dest="bitbake"/>
+    <linkfile src="meta-poky" dest="meta-poky"/>
+    <linkfile src=".templateconf" dest=".templateconf"/>
   </project>
-
 </manifest>
