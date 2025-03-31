@@ -1,0 +1,46 @@
+name: CI test
+
+on:
+  workflow_run:
+    workflows: ["CI imx8m", "CI imx93"]
+    types: [completed]
+  workflow_dispatch:
+    
+permissions:
+  contents: write
+jobs:
+  test_pr_sources:
+    runs-on: self-hosted
+    steps:
+      - name: Check success of CI workflow
+        run: |
+          if [ ${{ github.event.workflow_run.conclusion }} != "success" ]; then
+            echo "CI workflow failed"
+            exit 1
+          fi
+      - name: set env
+        run: |
+          echo ${{ github.event.workflow_run.name }}
+          if [[ "${{ github.event.workflow_run.name }}" == "CI imx8m" ]]; then
+            echo "MACHINE=iesy-imx8mm-eva-mi-v1" >> $GITHUB_ENV
+            echo "MANIFEST=iesy-osm-imx8m.xml" >> $GITHUB_ENV
+            echo "BRANCH=ci-scarthgap-iesy-osm-imx8m.xml" >> $GITHUB_ENV
+          elif [[ "${{ github.event.workflow_run.name }}" == "CI imx93" ]]; then
+            echo "MACHINE=iesy-imx93-eva-mi" >> $GITHUB_ENV
+            echo "MANIFEST=iesy-osm-imx93.xml" >> $GITHUB_ENV
+            echo "BRANCH=ci-scarthgap-iesy-osm-imx93.xml" >> $GITHUB_ENV
+          fi
+      - name: repo init
+        run: repo init -u https://github.com/iesy-gmbh/yocto-bsp-manifest -b $BRANCH -m $MANIFEST
+      - name: repo sync
+        run: repo sync
+      - name: run docker
+        run: |
+          docker run --device=/dev/kvm:/devb/kvm --device=/dev/net/tun:/dev/net/tun --cap-add NET_ADMIN --hostname buildserver -v /tftpboot:/tftpboot -v `pwd`:/home/build/work -e MACHINE=$MACHINE -e DISTRO=iesy-wayland -e EULA=1 yoctocontainer
+      - name: merge PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ${{ github.event_name }} == "workflow_run" ]; then
+            gh pr merge $BRANCH --delete-branch --merge
+          fi

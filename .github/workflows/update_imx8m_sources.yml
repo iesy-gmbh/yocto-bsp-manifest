@@ -1,0 +1,58 @@
+name: CI imx8m
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # run every Monday at 00:00
+  workflow_dispatch:
+jobs:
+  update_sources:
+    strategy:
+      matrix:
+        branch: [scarthgap]
+        machine: [iesy-osm-imx8m.xml]
+
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Switch to branch
+        run: git checkout ${{ matrix.branch }}
+      - name: repo init
+        run: repo init -u https://github.com/iesy-gmbh/yocto-bsp-manifest -b ${{ matrix.branch }} -m ${{ matrix.machine }}
+      - name: repo sync
+        run: repo sync
+      - name: update branches
+        run: |
+          cd sources/meta-freescale
+          git checkout ${{ matrix.branch }}
+          cd ../meta-freescale-3rdparty
+          git checkout ${{ matrix.branch }}
+          cd ../meta-freescale-distro
+          git checkout ${{ matrix.branch }}
+          cd ../meta-iesy-osm
+          git checkout ${{ matrix.branch }}
+          cd ../meta-openembedded
+          git checkout ${{ matrix.branch }}
+          cd ../poky
+          git checkout ${{ matrix.branch }}
+      - name: save changes
+        run: repo manifest -r -o ${{ matrix.machine }} --suppress-upstream-revision --suppress-dest-branch
+      - name: commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git branch -c ci-${{ matrix.branch }}-${{ matrix.machine }}
+          git checkout ci-${{ matrix.branch }}-${{ matrix.machine }}
+          if git diff --quiet ${{ matrix.machine }}; then
+            echo "no changes"
+            exit 78
+          fi
+          git add ${{ matrix.machine }}
+          git commit -m "update sources"
+          git push origin ci-${{ matrix.branch }}-${{ matrix.machine }}
+      - name: create PR
+        id: create_pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create --base ${{ matrix.branch }} --head ci-${{ matrix.branch }}-${{ matrix.machine }} --title "update sources" --body "update sources"
