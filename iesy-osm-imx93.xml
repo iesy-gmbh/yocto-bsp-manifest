@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/Freescale" name="freescale"/>
-  <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/iesy-gmbh" name="iesy"/>
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote name="freescale" fetch="https://github.com/Freescale"/>
+  <remote name="iesy" fetch="https://github.com/iesy-gmbh"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   
-  <project name="meta-freescale" remote="yocto" revision="0f8091c63dd8805610c09b08409bc58492a3b16f" path="sources/meta-freescale"/>
-  <project name="Documentation" remote="freescale" revision="7c9ad5c4d9e76e261ddf63fb7bc87fc244f55a38" path="sources/Documentation"/>
-  
-  <project name="fsl-community-bsp-base" remote="freescale" revision="60f79f7af60537146298560079ae603260f0bd14" path="sources/base">
-    <linkfile dest="README" src="README"/>
+  <project name="Documentation" path="sources/Documentation" remote="freescale" revision="7c9ad5c4d9e76e261ddf63fb7bc87fc244f55a38"/>
+  <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="60f79f7af60537146298560079ae603260f0bd14">
+    <linkfile src="README" dest="README"/>
   </project>
-  
-  <project name="meta-iesy-osm" remote="iesy" revision="5f41ac7bb412e15cfc1abc6fffdd6e4b90d64013" path="sources/meta-iesy-osm">
-    <linkfile dest="setup-environment" src="conf/setup-env"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="31031c3bedc1986348b2394f42db8e83ed47af02"/>
+  <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478">
+    <linkfile src="conf/setup-env" dest="setup-environment"/>
   </project>
-  <project name="meta-openembedded" remote="oe" revision="80e01188fa822d87d301ee71973c462d7a865493" path="sources/meta-openembedded"/>
-  <project name="poky" remote="yocto" revision="f43f393ef0246b7bee6eed8bcf8271cf2b8cdf40" path="sources/poky"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="67ad83dd7c2485dae0c90eac345007af6195b84d"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="9036bc090c771c710796e3690da59d3ebb96dcf1"/>
 </manifest>
