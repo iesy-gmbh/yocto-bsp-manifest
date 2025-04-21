@@ -10,10 +10,10 @@
     <linkfile src="README" dest="README"/>
     <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
-  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="3db229f14e8794238fa43b4066a6439fac506622"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="93ad3d265a0a95986f4e47e7001e0b1f1c6edbf1"/>
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" revision="1dfc65dd2006b51d156be5bcda0e3c72c936ad0a"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" revision="b9d6a5d9931922558046d230c1f5f4ef6ee72345"/>
   <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478"/>
-  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="67ad83dd7c2485dae0c90eac345007af6195b84d"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="78626a6f1861361bbd78a411cb27b093e34b466b"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="e92d0173a80ea7592c866618ef5293203c50544c"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="bab0f9f62af9af580744948dd3240f648a99879a"/>
 </manifest>
