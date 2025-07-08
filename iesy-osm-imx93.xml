@@ -14,5 +14,5 @@
     <linkfile src="conf/setup-env" dest="setup-environment"/>
   </project>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="727811eaf256b88fd135be99559f2cbf14c82fce"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="b8f8125f05e8ece078ba6bf01eebb2900cf2f9bf"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="7bb9c2255b3aed8441fba1133f350b223a3b6379"/>
 </manifest>
