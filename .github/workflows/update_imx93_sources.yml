@@ -41,7 +41,7 @@ jobs:
           git checkout ci-${{ matrix.branch }}-${{ matrix.machine }}
           if git diff --quiet ${{ matrix.machine }}; then
             echo "no changes"
-            exit 78
+            exit 0
           fi
           git add ${{ matrix.machine }}
           git commit -m "update sources"
