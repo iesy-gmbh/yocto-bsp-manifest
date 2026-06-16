@@ -9,10 +9,10 @@
   <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="60f79f7af60537146298560079ae603260f0bd14">
     <linkfile src="README" dest="README"/>
   </project>
-  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="0c27c21cab57876474bb572e5d378b6707e41224"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="b699d026506a6fc402e03afb432dcabd3d81c7ab"/>
   <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478">
     <linkfile src="conf/setup-env" dest="setup-environment"/>
   </project>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="d8cc4e44001c7257273d290ce8c4496e93d32841"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="d03f09df0ab0bf326ab1e0d0969f4643a9f8a378"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="b56134ff90dec996e8aae45ed7e6ad6b1d5a84a0"/>
 </manifest>
