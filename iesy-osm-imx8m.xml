@@ -10,7 +10,7 @@
     <linkfile src="README" dest="README"/>
     <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
-  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="4143744bc82508f00395a0ffe30e624b2341176a"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="ce51eb5486e87a34f04f0367351e3217855b17ba"/>
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="freescale" revision="ce10c065119c2d4e359235c77aae7e0d843533ef"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" revision="b9d6a5d9931922558046d230c1f5f4ef6ee72345"/>
   <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478"/>
