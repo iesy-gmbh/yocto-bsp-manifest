@@ -15,5 +15,5 @@
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" revision="2642b34e4c66ec1419e7f3a7a77a20b09e49e26b"/>
   <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="0f00f8b9a21950640da8c5707343e5540133f86e"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="4fb7016a07507683359ebd620f1951fd5ea44bfa"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="e306fa0fec72c6182e3e514ed3d1959ecaee8432"/>
 </manifest>
