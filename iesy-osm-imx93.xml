@@ -13,6 +13,6 @@
   <project name="meta-iesy-osm" path="sources/meta-iesy-osm" remote="iesy" revision="7396cfc46d22ab67f1b4b07c57f57d96f4101478">
     <linkfile src="conf/setup-env" dest="setup-environment"/>
   </project>
-  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="2db6aece32c7f8ebf6015b468e1b4e21de072e3b"/>
-  <project name="poky" path="sources/poky" remote="yocto" revision="6b7c1066f778db5a6b3e35400617b10342988fa8"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="96c2c78e13ff1b954715ff3c6d26bddd50a02509"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="86a777b24f93803dcac8950c03c55da602186af8"/>
 </manifest>
